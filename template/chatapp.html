@@ -1,0 +1,45 @@
+ <html>
+    <title>Chat App</title>
+    <body>
+        <div id="page">
+            <div id="header">
+                Welcome to Chat App
+                {{userfirstname}}
+                <button type="button" ng-click="logout()" class="buttonlogout">Logout</button><br><br/>
+            </div>
+            <div id="menu">
+                All Users
+                <div ng-repeat="x in displayAllUser" ng-click="user(x)" ng-show="currentUser != x.emailid">
+                    <li class="active">
+                        <div class="user_info">
+                            {{x.firstname}}
+                        </div>
+                    </li>
+                </div>
+            </div>
+            <div id="content">
+                Messages
+                <div ng-repeat="chat in getallMessages">	
+                    <div class="container">
+                        <!-- <img src="/home/admin1/Chat_Application/front_end/assests/rose.jpg" alt="Avatar"> -->
+                        <span class="chatMsgRec"><strong>{{chat.senderName}}:</strong>{{chat.message}}</span>
+                        <!-- <span class="time-right">11:00</span> -->
+                    </div>
+                </div>
+                <form class="form-field">  
+                    <div class="row">
+                        <div class="column">
+                            <textarea placeholder="Start conversation.." ng-model="message" required></textarea>
+                        </div>
+                        <div class="column">
+                            <button type="submit" ng-click="sendmessage()" class="buttonsend">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html> 
+
+
+

@@ -1,0 +1,147 @@
+div#page
+{
+    border:1px solid black;
+    width:1300px;
+    margin:0 auto;
+    padding:5px;
+    text-align:left;
+    position:relative;
+    background-color: lightblue;
+}
+
+div 
+{
+    text-align:center;
+}
+
+div#header 
+{
+    border:1px solid black;
+    font-size: 35px;
+    width:1286px;
+    height:40px;
+    position:relative;
+    background-color: lightpink;
+}
+
+.buttonlogout
+{
+    float: right;
+}
+
+div#menu
+{
+    border:1px solid black;
+    width:254px;
+    font-size: 28px;
+    float:left;
+    margin:10px 0 10px 5px;
+    height:600px;
+    background-color: lightskyblue;
+}
+
+div#content 
+{
+    border:1px solid black;
+    width:1000px;
+    margin:10px 0 10px 268px;
+    min-height:600px;
+    height:600px;
+    background-color: lightgreen;
+
+}
+
+.buttonlogout
+{
+    background-color: blue; 
+    border:none;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 4px 4px 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    float: right;
+}
+.buttonlogout:hover {
+    background-color: #3e8e41;
+}
+
+/* Add styles to the form container */
+.form-field {
+    top: 80%;
+    bottom:80%;
+    text-align: left;
+    max-width: 250px;
+    padding: 10px;
+}
+
+/* Full-width textarea */
+.form-field textarea {
+  margin-right: 30px;
+  margin-top: 500px;
+  width: 1002%;
+  padding:0px;
+  /* bottom: 100%; */
+  /* margin: 10px 0 22px 10px; */
+  border: none;
+  background: hsl(0, 0%, 95%);
+  resize: horizontal;
+  min-height: 5px;
+
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+  
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: transparent;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  
+  margin-bottom:10px;
+  opacity: 0.8;
+  
+}
+
+.column
+{
+    float: left;
+    width: 35%;
+    padding: 10px;
+    height: 100px;
+}
+
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.buttonsend
+{
+    background-color: blue; 
+    border:none;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 775px;
+    margin-top: 500px;
+    margin-bottom: 6px;    
+}
+.buttonsend:hover {
+    background-color: #3e8e41;
+}

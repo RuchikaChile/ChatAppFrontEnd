@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <body class="body">
+        <div class="login" ng-app = "chatApplication" ng-controller="controlLogin">
+            <h1>Login</h1>
+
+            <div class="testbox">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input type="text" placeholder="example@gmail.com" ng-model = "emailid">
+            </div>
+
+            <div class="testbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Password" ng-model = "password">
+            </div>
+            <br>
+            <button type ="button" ng-click="login()" class = "btn">LogIn</button><br><br/>
+            <a ui-sref="register">Registration</a>
+            <a ui-sref="forget">Forget Password</a>
+        </div>
+    </body>
+</html>
