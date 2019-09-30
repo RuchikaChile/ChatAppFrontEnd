@@ -3,7 +3,7 @@ chatApplication.service('serviceLogin', function ($http, $location, SocketServic
         console.log("Data on Login Service: ", data);
         $http({
             method: 'POST',
-            url: 'http://localhost:4000/login',
+            url: 'http://3.17.151.48:4000/login',
             data: data
 
         }).then(

@@ -38,6 +38,6 @@ chatApplication.config(function ($stateProvider, $urlRouterProvider) {
 chatApplication.service('SocketService', ['socketFactory', function SocketService(socketFactory) {
     console.log(" chat connected");
     return socketFactory({
-        ioSocket: io.connect('http://localhost:4000')
+        ioSocket: io.connect('http://3.17.151.48:4000/')
     });
 }]);

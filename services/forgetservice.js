@@ -3,7 +3,7 @@ chatApplication.service('serviceForget', function ($http, $location) {
         console.log("data on service forget---", data);
         $http({
             method: 'POST',
-            url: 'http://localhost:4000/forget',
+            url: 'http://3.17.151.48:4000/forget',
             data: data
 
         }).then(

@@ -4,7 +4,7 @@ chatApplication.service('serviceReset', function ($http, $location) {
         console.log("header token in reset", headers.token);
         $http({
             method: 'POST',
-            url: 'http://localhost:4000/reset/:token',
+            url: 'http://3.17.151.48:4000/reset/:token',
             data: data
 
         }).then(

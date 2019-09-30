@@ -9,7 +9,7 @@ chatApplication.service('chatService', function ($http,$location)
             token = localStorage.getItem('token');
             $http({
                 method: 'GET',
-                url: 'http://localhost:4000/displayAllUser',
+                url: 'http://3.17.151.48:4000/displayAllUser',
                 headers: {
                      token: token
                 }
@@ -38,7 +38,7 @@ chatApplication.service('chatService', function ($http,$location)
             console.log(" Token in getusermessage method ", usertoken);
             $http({
                 method: 'GET',
-                url: 'http://localhost:4000/getUserMessage',
+                url: 'http://3.17.151.48:4000/getUserMessage',
                 headers: {
                     'token': usertoken,
                 }

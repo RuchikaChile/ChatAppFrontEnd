@@ -4,7 +4,7 @@ chatApplication.service('serviceRegister', function ($http, $location) {
         console.log("Data in service register: ", data);
         $http({
             method: 'POST',
-            url: 'http://localhost:4000/register',
+            url: 'http://3.17.151.48:4000/register',
             data: data
 
         }).then(
